@@ -1,4 +1,5 @@
 namespace Classes;
+
 public class Guerreiro
 {
     public string NomePersonagem { get; set; }
