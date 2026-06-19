@@ -2,6 +2,8 @@
 
 
 Menu menu = new();
-menu.Exibir();
+
+menu.VerificarNome();
+menu.ExibirMenu();
 
 

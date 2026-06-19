@@ -1,23 +1,28 @@
 using Classes;
+using Jogadores;
 
 namespace MenuClass;
 
-public class Menu
+public class Menu : Jogador
 {
-    public string NomePersonagem { get; set; }
+    Jogador jogador = new();
+
     public short EscolhaClasses { get; set; }
     public string EscolhaConfirmacao { get; set; }
 
-    public void Exibir()
+    public void VerificarNome()
     {
-        Console.WriteLine("Digite o seu nick :");
-        NomePersonagem = Console.ReadLine();
+         Console.WriteLine("Digite o seu nick :");
+        NomeJogador = Console.ReadLine();
+    }
 
+    public void ExibirMenu()
+    {
         Console.Clear();
 
         Console.WriteLine("MINI RPG");
         Console.WriteLine("============================");
-        Console.WriteLine($"Escolha sua classe, {NomePersonagem}");
+        Console.WriteLine($"Escolha sua classe, {NomeJogador}");
         Console.WriteLine("============================");
 
         Console.WriteLine("CLASSES");
