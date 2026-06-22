@@ -5,17 +5,8 @@ namespace MenuClass;
 
 public class Menu : Jogador
 {
-    Jogador jogador = new();
-
     public short EscolhaClasses { get; set; }
-    public string EscolhaConfirmacao { get; set; }
-
-    public void VerificarNome()
-    {
-         Console.WriteLine("Digite o seu nick :");
-        NomeJogador = Console.ReadLine();
-    }
-
+  
     public void ExibirMenu()
     {
         Console.Clear();

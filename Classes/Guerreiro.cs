@@ -8,7 +8,7 @@ public class Guerreiro
     public int DefesaPersonagem { get; set; }
     public int ManaPersonagem { get; set; }
     public short EscolhaClasses { get; set; }
-    public string EscolhaConfirmacao { get; set; }
+    
 
     public void guerreiro()
     {
@@ -22,16 +22,17 @@ public class Guerreiro
         Console.WriteLine("============================");
         Console.WriteLine("Você tem certeza da sua classe?");
         Console.WriteLine("Digite: sim ou nao");
-        EscolhaConfirmacao = Console.ReadLine().ToLower();
+    }
 
-        if (EscolhaConfirmacao == "sim")
+    public void EscolhaConfirmacao(string escolhaConfirmacao)
+    {
+         if (escolhaConfirmacao == "sim")
         {
             Console.WriteLine("Você confirmou sua escolha!");
-        }
-
-        if (EscolhaConfirmacao == "nao")
+        }   
+        else
         {
-            Console.WriteLine("Você cancelou a escolha.");
+            Console.WriteLine("Você cancelou sua escolha.");
         }
     }
 }
