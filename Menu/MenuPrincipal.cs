@@ -2,32 +2,17 @@ using Classes;
 
 namespace Menu;
 
-public class Menu : MenuBase
+public class MenuPrincipal
 {
-    public void ExibirEscolhaNick()
+    public Personagem EscolherClasse (short escolha)
     {
-        Console.WriteLine("Digite seu nick:");
-        Console.ReadLine();
-    }
-
-    public void ExibirEscolha()
-    {
-        Console.WriteLine("Chronos rpg");
-
-        Console.WriteLine("Escolha sua classe,");
-
-        Console.WriteLine("1 - Mago");
-        Console.WriteLine("2 - Guerreiro");
-        Console.WriteLine("3 - Arqueiro");
-        Console.WriteLine("4 - Assasino");
-        short.Parse(Console.ReadLine());
-    }
-
-    public void EscolherClasse(short escolha)
-    {
-        switch (escolha)
+        switch(escolha)
         {
-        
+            case 1: 
+                return new Mago();
+
+            default:
+                throw new ArgumentException("Classe invalida");
         }
     }
 }

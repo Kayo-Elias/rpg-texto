@@ -2,17 +2,17 @@ using Monstros;
 
 namespace Classes;
 
-public class Mago : Personagem
+public class Assasino : Personagem
 {
-    public Mago()
+ public Assasino()
     {
-        Nome = "Mago";
+        Nome = "Assasino";
         Vida = 35;
-        Ataque = 12;
-        Mana = 30;
+        Ataque = 15;
+        Mana = 40;
 
-        Console.WriteLine("Parabens, você escolheu o mago!");
-        Console.WriteLine("Atributos do mago:");
+        Console.WriteLine("Parabens, você escolheu o assasino!");
+        Console.WriteLine("Atributos do assasino:");
         Console.WriteLine($"Nome: {Nome} - Vida {Vida} - Ataque {Ataque} - Mana {Mana}");
     }
    
