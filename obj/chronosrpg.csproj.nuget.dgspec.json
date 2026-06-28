@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "c:\\dev\\chronos-rpg\\RpgTexto.csproj": {}
+    "c:\\dev\\chronos-rpg\\chronosrpg.csproj": {}
   },
   "projects": {
-    "c:\\dev\\chronos-rpg\\RpgTexto.csproj": {
+    "c:\\dev\\chronos-rpg\\chronosrpg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\dev\\chronos-rpg\\RpgTexto.csproj",
-        "projectName": "RpgTexto",
-        "projectPath": "c:\\dev\\chronos-rpg\\RpgTexto.csproj",
+        "projectUniqueName": "c:\\dev\\chronos-rpg\\chronosrpg.csproj",
+        "projectName": "chronosrpg",
+        "projectPath": "c:\\dev\\chronos-rpg\\chronosrpg.csproj",
         "packagesPath": "C:\\Users\\elias\\.nuget\\packages\\",
         "outputPath": "c:\\dev\\chronos-rpg\\obj\\",
         "projectStyle": "PackageReference",

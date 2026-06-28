@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\rpg-texto\\RpgTexto.csproj",
-      "projectName": "RpgTexto",
-      "projectPath": "C:\\dev\\rpg-texto\\RpgTexto.csproj",
+      "projectUniqueName": "c:\\dev\\chronos-rpg\\chronosrpg.csproj",
+      "projectName": "chronosrpg",
+      "projectPath": "c:\\dev\\chronos-rpg\\chronosrpg.csproj",
       "packagesPath": "C:\\Users\\elias\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\rpg-texto\\obj\\",
+      "outputPath": "c:\\dev\\chronos-rpg\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\elias\\AppData\\Roaming\\NuGet\\NuGet.Config"
