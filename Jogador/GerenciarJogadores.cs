@@ -26,32 +26,55 @@ public class Jogadores : JogadorBase
 
     public void ListarJogadores()
     {
+        Console.WriteLine("Jogadores ativos:");
+
         foreach (var j in listaJogador)
         {
             Console.WriteLine($"Nome: {j.Nome} | Classe: {j.Classe} | Level {j.Level}");
         }
     }
 
-    public void SelecionarJogador()
+    public bool SelecionarJogador()
     {
+
         Console.WriteLine("Deseja selecionar um jogador?");
-        Console.ReadLine();
+        var selecionar = Console.ReadLine().ToLower();
+
+        if (selecionar == "sim")
+        {
+            Console.WriteLine("Selecione o jogador pelo nome");
+            var nome = Console.ReadLine();
+
+            listaJogador.FirstOrDefault(j => j.Nome == nome);
+            Console.WriteLine($"Você selecionou o jogador: {nome}");
+
+            return true;
+        }
+        else
+        {
+            Console.WriteLine("Seleção cancelada!");
+
+            return false;
+        }
     }
 
-    public bool AdicionarJogador(string nome)
+    public bool AdicionarJogador()
     {
+        Console.WriteLine("Digite um nickname:");
+        var nome = Console.ReadLine();
+
         {
             if (listaJogador.Any(j => j.Nome == nome))
             {
-                Console.WriteLine("Esse jogador já existe!");
+                Console.WriteLine("Este jogador já existe!");
 
-                return false;
+                return true;
             }
             else
             {
                 listaJogador.Add(new Jogadores(nome));
 
-                return true;
+                return false;
             }
         }
     }

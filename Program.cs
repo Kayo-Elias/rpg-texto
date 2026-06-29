@@ -6,20 +6,15 @@ using Players;
 Jogadores jogadores = new Jogadores();
 MenuPrincipal menu = new MenuPrincipal();
 
-Console.WriteLine("Jogadores ativos:");
+menu.SelecionarOuCriarJogador();
 jogadores.IniciarJogadores();
 jogadores.ListarJogadores();
 jogadores.SelecionarJogador();
+jogadores.AdicionarJogador();
 
+Console.WriteLine("CHRONOS RPG");
 
-Console.WriteLine("Digite seu nick:");
-string nome = Console.ReadLine();
-
-jogadores.AdicionarJogador(nome);
-
-Console.WriteLine("Chronos rpg");
-
-Console.WriteLine($"Escolha sua classe, {jogadores.Nome}");
+Console.WriteLine($"Escolha sua classe");
 
 Console.WriteLine("1 - Mago");
 Console.WriteLine("2 - Guerreiro");

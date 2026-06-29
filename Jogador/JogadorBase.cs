@@ -1,6 +1,6 @@
 namespace Players;
 
-public class JogadorBase
+public abstract class JogadorBase
 {
     public int Id { get; set; }
     public string Nome { get; set; }

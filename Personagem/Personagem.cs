@@ -1,6 +1,6 @@
 namespace Classes;
 
-public class Personagem
+public abstract class Personagem
 {
     public string Nome { get; set; }
     public int Vida { get; set; }
